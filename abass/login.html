@@ -7,9 +7,61 @@
 		<hr />
 
 		<form>
-			Firstname: &nbsp; <input type="text" /> <br />
-			Surname: <input type="text" /> <br />
-			birthday: <input type="date" />
+			<div>
+				<label>Firstname:</label> &nbsp;
+				<input
+					type="text"
+					id="firstname"
+					name="fristname"
+					placeholder="firstname"
+				/>
+			</div>
+			<br />
+			<div>
+				<label>Surname:</label> &nbsp;
+				<input type="text" id="surname" name="Surname" placeholder="Surname" />
+			</div>
+			<br />
+
+			<label>birthday:</label> &nbsp;
+			<input type="date" name="birthday" id="birthday" placeholder="birthday" />
+			<br />
+			<div>
+				<label> sex: </label> &nbsp;
+
+				<input type="radio" name="sex" id="sex" /> Male
+				<input type="radio" name="sex" id="sex" /> Female
+			</div>
+			<br />
+			<div>
+				<label>cars:</label>
+				<input type="checkbox" id="cars" name="cars" /> Toyota
+				<input type="checkbox" id="cars" name="cars" /> Benz
+			</div>
+			<br />
+			<div>
+				<label>Email:</label>
+				<input type="email" id="email" name="email" placeholder="email" />
+			</div>
+			<br />
+			<div>
+				<label> Password:</label>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					placeholder="password"
+				/>
+			</div>
+			<br />
+			<div>
+				<label>Address: </label> &nbsp;&nbsp;
+				<textarea name="Address" id="Address" cols="30" rows="10"></textarea>
+			</div>
+			<br />
+			<div>
+				<input type="Submit" />
+			</div>
 		</form>
 	</body>
 </html>
