@@ -10,53 +10,145 @@
     </head>
 
     <body>
-        <h3>Forms</h3>
-        <hr>
-        <form action="">
-            <div><label for="">Firstname</label>
-                <input type="text" name="" id="" required >
-            </div>
-            <div><label for="">Surname</label>
-                &nbsp; <input type="text" name="" id="" required >
-            </div>
-            <div><label for="">Email</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="" id="" required >
-            </div>
-            <div><label for="">Phone</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" required >
-            </div>
-            <div><label for="">Address</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="" id="" cols="21" rows="1"></textarea>
-            </div>
-            <div><label for="">Birthday</label>
-                &nbsp;&nbsp;<input type="date" name="" id="" required >
-            </div>
-            <div><label for="">Sex</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id=""> <label for="">Male</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id=""><label for="">Female</label>
-            </div>
-            <div><label for="">Cars</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="car" id=""><label for="">Camry</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="car" id=""><label for="">Toyota</label>
-            </div>
-            <div><label for="">Password</label>
-                <input type="password" name="" id="" required>
-            </div>
-            <div><label for="">Confirm Password</label>
-                <input type="password" name="" id="" required>
-            </div>
-            <div><label for="">Upload</label>
-                <input type="file" name="" id="" required>
-            </div>
-            <div>
-                <input type="submit" value="submit">
-            </div>
 
-        </form>
+        <div class="body">
+            <center>
+                <div class="imgdb">
+                    <img width="200" src="./img/alliArtboard 1.png" alt="Alliance">
+                </div>
+
+                <div class="all">
+                    <h3>Sign Up</h3>
+                    <hr>
+                    <form action="submit.php">
+                        <div><label for="">Firstname</label>
+                            <input type="text" name="" id="" required>
+                        </div>
+                        <div><label for="">Surname</label>
+                            &nbsp; <input type="text" name="" id="" required>
+                        </div>
+                        <div><label for="">Email</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="" id="" required>
+                        </div>
+                        <div><label for="">Phone</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" required>
+                        </div>
+                        <div><label for="">Address</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="" id="" cols="21" rows="1"></textarea>
+                        </div>
+                        <div><label for="">Birthday</label>
+                            &nbsp;&nbsp;<input type="date" name="" id="" required>
+                        </div>
+                        <div><label for="">Sex</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex"
+                                id="">
+                            <label for="">Male</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex"
+                                id=""><label for="">Female</label>
+                        </div>
+                        <div><label for="">Cars</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"
+                                name="car" id=""><label for="">Camry</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"
+                                name="car" id=""><label for="">Toyota</label>
+                        </div>
+                        <div><label for="">Password</label>
+                            <input type="password" name="" id="" required>
+                        </div>
+                        <div><label for="">Confirm Password</label>
+                            <input type="password" name="" id="" required>
+                        </div>
+                        <div><label for="">Upload</label>
+                            <input type="file" name="" id="" required>
+                        </div>
+                        <div class="sub">
+                            <input type="submit" value="submit">
+                        </div>
+
+                    </form>
+                </div>
+        </div>
+        </center>
         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            h3 {
+                font-size: 30px;
+                color: white;
+            }
+
+            .body {
+                background-color: black;
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+            }
+
+            .body2 {
+                width: 100%;
+                height: 50vh;
+                background-color: teal;
+            }
+
+            h1 {
+                color: white;
+                margin: 10px 0px 0px 0px;
+            }
+
+            .all {
+                padding: 10px;
+                background-color: rgba(187, 0, 37, 0.918);
+                justify-content: center;
+                position: relative;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 1px 1px 18px -1px grey;
+                top: 20px;
+                border: 2px solid white;
+                border-style: dotted;
+                width: 350px;
+                height: 350px;
+            }
+
+            label {
+                text-align: left;
+                color: white;
+                font-size: 20px;
+            }
+
+
             input {
-                margin: 5px;
-                align-items: center;
+                color: white;
+                border: transparent;
+                border-bottom: 1px solid whitesmoke;
+                border-left: 1px solid whitesmoke;
+                background: transparent;
+            }
+
+            .sub input {
+                margin-top: 10px;
+                color: white;
+                border: 2px solid teal;
+                padding: 5px;
+                border-style: groove;
+                background-color: crimson;
+                box-shadow: 0px 0px 13px -7px white;
+                border-radius: 50px;
+            }
+
+            .sign-up p {
+                margin: 10px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .sign-up a {
+                text-decoration: none;
+                color: teal;
             }
 
         </style>
